@@ -4,17 +4,22 @@
     "version": "1.0",
     "description": "Copy the crash information of Firebase Crashlytics to your clipboard in markdown.",
     "icons": {
-        "24": "images/baseline_file_copy_black_24.png",
-        "48": "images/baseline_file_copy_black_48.png"
+        "19": "images/icon_19.png",
+        "32": "images/icon_32.png",
+        "38": "images/icon_38.png",
+        "48": "images/icon_48.png",
+        "128": "images/icon_128.png"
     },
     "page_action": {
-        "default_icon": "images/baseline_file_copy_black_24.png",
+        "default_icon": {
+            "32": "images/icon_32.png"
+        },
         "default_title": "Firebase-Crashlytics.md"
     },
     "background": {
         "page": "background.html",
         "persistent": true
     },
-    "homepage_url": "http://path/to/homepage",
+    "homepage_url": "https://github.com/komatatsu/firebase-crashlytics-md",
     "permissions": ["clipboardWrite", "https://console.firebase.google.com/project/*/crashlytics/app/*/issues/*"]
 }
