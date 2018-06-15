@@ -1,0 +1,20 @@
+{
+    "manifest_version": 2,
+    "name": "Firebase-Crashlytics.md",
+    "version": "1.0",
+    "description": "Copy the crash information of Firebase Crashlytics to your clipboard in markdown.",
+    "icons": {
+        "24": "images/baseline_file_copy_black_24.png",
+        "48": "images/baseline_file_copy_black_48.png"
+    },
+    "page_action": {
+        "default_icon": "images/baseline_file_copy_black_24.png",
+        "default_title": "Firebase-Crashlytics.md"
+    },
+    "background": {
+        "page": "background.html",
+        "persistent": true
+    },
+    "homepage_url": "http://path/to/homepage",
+    "permissions": ["clipboardWrite", "https://console.firebase.google.com/project/*/crashlytics/app/*/issues/*"]
+}
